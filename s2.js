@@ -1,7 +1,17 @@
-    $(document).ready(function() {
-      // Creating a new nav item element
-      var newNavItem = $('<li><a href="https://example.com" target="_blank">Custom Link</a></li>');
+$(function() {
+    // Selector for the horizontal menu buttons
+    var HORIZONTAL_MENU_BUTTONS_SELECTOR = '.global-actions > .global-actions-list:last-child';
 
-      // Appending the new nav item to the existing nav list
-      $('.nav').append(newNavItem);
-    });
+    // HTML code for the new menu section
+    var newMenuSection = `
+        <li class="global-action-item inlb force-login" title="New Section">
+            <a class="nav-item-url" href="#new-section">
+                <i class="icon fi-star"></i>
+                New Section
+            </a>
+        </li>
+    `;
+
+    // Add the new menu section to the horizontal menu buttons
+    $(HORIZONTAL_MENU_BUTTONS_SELECTOR).append(newMenuSection);
+});
