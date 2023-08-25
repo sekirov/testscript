@@ -6,7 +6,7 @@ $(document).ready(function() {
     // HTML code for the new menu section
     var newMenuSection = `
         <li class="nav-item nav-item-new-section inlb ">
-            <a class="nav-item-url" href="#new-section"> New Section</a>
+            <a class="nav-item-url" href="#https://st.omnidesk.ru/staff/cases/list/custom/g_83283"> Новости</a>
         </li>
     `;
 
